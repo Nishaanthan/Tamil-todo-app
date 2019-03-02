@@ -1,0 +1,1 @@
+process.env.MONGO='mongodb://dbUser:Nisanthan077@senthuran-shard-00-00-ljm8b.mongodb.net:27017,senthuran-shard-00-01-ljm8b.mongodb.net:27017,senthuran-shard-00-02-ljm8b.mongodb.net:27017/test?ssl=true&replicaSet=Senthuran-shard-0&authSource=admin&retryWrites=true'

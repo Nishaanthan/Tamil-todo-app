@@ -9,7 +9,7 @@ var express = require('express')
   , path = require('path')
   , mongoose = require('mongoose')
   , io = require('socket.io')
-  , mongoURI =  process.env.MONGOLAB_URI || 'mongodb://dbUser:Nisanthan077@senthuran-shard-00-00-ljm8b.mongodb.net:27017,senthuran-shard-00-01-ljm8b.mongodb.net:27017,senthuran-shard-00-02-ljm8b.mongodb.net:27017/test?ssl=true&replicaSet=Senthuran-shard-0&authSource=admin&retryWrites=true'
+  , mongoURI =  process.env.MONGOLAB_URI || process.env.MONGO // Replace process.env.MONGO with your remote/Local mongo URL
   , Schema = mongoose.Schema
   , ObjectID = Schema.ObjectId
   , Todo = require('./models/todos.js').init(Schema, mongoose)
